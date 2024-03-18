@@ -57,8 +57,26 @@ To prepare your environment and build the project for production, follow these s
 
     This command triggers the build process in production mode, optimizing the output for deployment.
 
-6. **Deployment**: After the build completes, you will find the compiled control in the `out/controls` directory. Follow the Microsoft documentation for deploying PCF controls to import the control into your PowerApps or Dynamics 365 environment.
 
-## Conclusion
+## Usage
+After building the control, it can be imported into your Power Apps environment. It can be used in any model-driven where you need to display a iFrame.
 
-This document provides a comprehensive overview of the iFrame PCF control project, including its features, configuration, and detailed instructions for building and deploying the control. With this control, users can easily integrate external web content into their Microsoft Dynamics 365 or PowerApps environments, enhancing the functionality and user experience of their applications.
+### Configuration
+- **URL Value**: Bind the control to a field in your Power Apps environment.
+- **Height (optional)**: Modify the hight so it fits within your form.
+- **Query String Name (optional)**: Appends to the end of the URL value.
+- **Query String Value (optional)**: Appends to the end of the URL value.
+
+e.g. {URL Value}{Query String Name}{Query String Value}
+
+## Development
+This control is developed using TypeScript. You can extend or modify the control by updating the `index.ts` file.
+
+### Debugging
+Use console logs for debugging purposes. Ensure to remove them in the production build for optimal performance.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+For support and queries, please open an issue in the GitHub repository.
