@@ -4,9 +4,9 @@
   <control 
       namespace="mightora.io.controls" 
       constructor="iFrame" 
-      version="0.0.3" 
-      display-name-key="iFrame" 
-      description-key="iFrame description" 
+      version="0.1.5" 
+      display-name-key="iFrameWithSplitUrl" 
+      description-key="Embed responsive iframes in PowerApps with customizable display controls." 
       control-type="standard">
       
     <!-- Indicates that this control does not require external service usage -->
@@ -17,15 +17,14 @@
         name="UrlPart1" 
         display-name-key="UrlPart1" 
         description-key="First part of the URL" 
-        of-type="SingleLine.Text" 
-        usage="bound" 
-        required="true" />
+        of-type="SingleLine.Text"  
+        usage="input" />
         
     <property 
         name="UrlPart2" 
         display-name-key="UrlPart2" 
         description-key="Second part of the URL" 
-        of-type="SingleLine.Text" 
+        of-type="SingleLine.Text"  
         usage="bound" 
         required="true" />
         
@@ -34,8 +33,7 @@
         display-name-key="UrlPart3" 
         description-key="Third part of the URL" 
         of-type="SingleLine.Text" 
-        usage="bound" 
-        required="true" />
+        usage="input" />
         
     <property 
         name="Height" 
