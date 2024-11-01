@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <!-- Defines the main control properties -->
+  <control 
+      namespace="mightora.io.controls" 
+      constructor="iFrame" 
+      version="0.0.3" 
+      display-name-key="iFrame" 
+      description-key="iFrame description" 
+      control-type="standard">
+      
+    <!-- Indicates that this control does not require external service usage -->
+    <external-service-usage enabled="false"></external-service-usage>
+    
+    <!-- Properties for URL parts and iframe dimensions -->
+    <property 
+        name="UrlPart1" 
+        display-name-key="UrlPart1" 
+        description-key="First part of the URL" 
+        of-type="SingleLine.Text" 
+        usage="bound" 
+        required="true" />
+        
+    <property 
+        name="UrlPart2" 
+        display-name-key="UrlPart2" 
+        description-key="Second part of the URL" 
+        of-type="SingleLine.Text" 
+        usage="bound" 
+        required="true" />
+        
+    <property 
+        name="UrlPart3" 
+        display-name-key="UrlPart3" 
+        description-key="Third part of the URL" 
+        of-type="SingleLine.Text" 
+        usage="bound" 
+        required="true" />
+        
+    <property 
+        name="Height" 
+        display-name-key="Height" 
+        description-key="Height" 
+        of-type="Whole.None" 
+        usage="input" />
+        
+    <property 
+        name="Width" 
+        display-name-key="Width" 
+        description-key="Width of the iframe" 
+        of-type="Whole.None" 
+        usage="input" />
+        
+    <!-- Query string properties for additional URL parameters -->
+    <property 
+        name="QueryStringName" 
+        display-name-key="QueryStringName" 
+        description-key="Name of the query string parameter" 
+        of-type="SingleLine.Text" 
+        usage="input" />
+        
+    <property 
+        name="QueryStringValue" 
+        display-name-key="QueryStringValue" 
+        description-key="Value of the query string parameter" 
+        of-type="SingleLine.Text" 
+        usage="input" />
+    
+    <!-- Boolean properties to enable or disable button functionalities -->
+    <property 
+        name="EnableOpenInNewTab" 
+        display-name-key="EnableOpenInNewTab" 
+        description-key="Enable opening URL in a new tab" 
+        of-type="TwoOptions" 
+        usage="input" />
+        
+    <property 
+        name="EnableOpenFullPage" 
+        display-name-key="EnableOpenFullPage" 
+        description-key="Enable opening iframe in full-page mode" 
+        of-type="TwoOptions" 
+        usage="input" />
+
+    <!-- Resources for the control, such as JavaScript or TypeScript files -->
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>

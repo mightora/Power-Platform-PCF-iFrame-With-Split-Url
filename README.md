@@ -69,6 +69,9 @@ After building the control, it can be imported into your Power Apps environment.
 
 e.g. {URL Value}{Query String Name}{Query String Value}
 
+## Deplyment 
+`pac pcf push --publisher-prefix mightora`
+
 ## Development
 This control is developed using TypeScript. You can extend or modify the control by updating the `index.ts` file.
 

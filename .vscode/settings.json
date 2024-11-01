@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "microsoft-IsvExpTools.powerplatform-vscode",
+        "mhutchie.git-graph",
+        "bierner.markdown-mermaid",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "rbbit.typescript-hero",
+        "msjsdiag.debugger-for-chrome",
+        "ms-vscode.azure-account",
+        "humao.rest-client",
+        "visualstudioexptteam.vscodeintellicode"
+    ]
+}
